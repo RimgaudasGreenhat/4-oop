@@ -39,12 +39,31 @@ export class Car {
             this.tank = this.tankMax;
         }
     }
-   /* distancePerGas(distance, consumption)
+
+    engineOn() {
+        if (this.engineIsOn) {
+            return 'Error: engine is already turned on.';
+        }
+        if (this.tank === 0) {
+            return 'Error: engine can not be turned on, because need some gas.';
+        }
+
+        this.engineIsOn = true;
+    }
+
+    engineOff() {
+        if (!this.engineIsOn) {
+            return 'Error: engine is already turned off.';
+        }
+
+        this.engineIsOn = false;
+    }
+}
+    distancePerGas(distance, consumption)
     {
         return ((distance/100) * consumption).toFixed(1);
     }
-    if (((distance/100) * consumption).toFixed(1) > tankMax)
+    if (((distance/100) * consumption).toFixed(1) > tankMax)  // nežinau blemba kažkaip per sunkiai man rodos pasidariau, bet nežinau kaip kitaip dayt reiktų kad išsispęstu, reiks rytojaus laukt ir išsiaiškinti geresnį būdą, surely kažkas bus išsprendęs ir geriau nei aš sugalvojęs 😖
         {
             return "Fuel consumption reached critical level and the car will now explode, thank you have a nice day!"
         }
-}*/

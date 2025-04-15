@@ -54,13 +54,25 @@ import { Dog } from "./js/Dog.js";
 import { Hamster } from "./js/Hamster.js";
 import { Pike } from "./js/Pike.js";
 import { Shark } from "./js/Shark.js";
+import { Eagle } from "./js/Eagle.js";
+import { Hummingbird } from "./js/HummingBird.js";
+import { Parrot } from "./js/Parrot.js";
+
 
 const rex = new Dog('Rex', 'black');
 const rainis = new Cat('Rainis', 'mixed');
 const keksas = new Hamster('Keksas', 'brown');
 
+
 const antanas = new Shark('Antanas');
 const lydeka = new Pike('Lydeka');
+const bloodwing = new Eagle ('Bloodwing');
+const dusliarka = new Hummingbird ('Dusliarka');
+const polly = new Parrot ('Polly');
+console.log(bloodwing.hi());
 console.log(lydeka.hi());
 console.log(lydeka.grantWish('lots of cash'));
 console.log(antanas.hi());
+console.log(bloodwing.position());
+console.log(dusliarka.position());
+console.log(polly.speak('Ką žiūri gaidy?'));
