@@ -7,12 +7,13 @@
 */
 
 export class Car {
-    constructor(model, color, tankMax) {
+    constructor(model, color, tankMax, consumption) {
         this.model = model;
         this.color = color;
         this.tankMax = tankMax;
         this.tank = 0;
         this.engineIsOn = false;
+        this.fuelConsumption = consumption;
     }
 
     intro() {
@@ -38,4 +39,12 @@ export class Car {
             this.tank = this.tankMax;
         }
     }
-}
+   /* distancePerGas(distance, consumption)
+    {
+        return ((distance/100) * consumption).toFixed(1);
+    }
+    if (((distance/100) * consumption).toFixed(1) > tankMax)
+        {
+            return "Fuel consumption reached critical level and the car will now explode, thank you have a nice day!"
+        }
+}*/

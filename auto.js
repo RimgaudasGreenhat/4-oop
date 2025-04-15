@@ -12,3 +12,4 @@ console.log(zapas.refill('pazadais uzpilti'));
 console.log(zapas.refill(NaN));
 console.log(zapas.refill(Infinity));
 console.log(zapas);
+console.log(zapas.distancePerGas(35, 6));
