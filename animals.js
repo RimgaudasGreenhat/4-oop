@@ -57,6 +57,8 @@ import { Shark } from "./js/Shark.js";
 import { Eagle } from "./js/Eagle.js";
 import { Hummingbird } from "./js/HummingBird.js";
 import { Parrot } from "./js/Parrot.js";
+import { Elephant } from "./js/Elephant.js";
+import { Monkey } from "./js/Monkey.js";
 
 
 const rex = new Dog('Rex', 'black');
@@ -69,6 +71,10 @@ const lydeka = new Pike('Lydeka');
 const bloodwing = new Eagle ('Bloodwing');
 const dusliarka = new Hummingbird ('Dusliarka');
 const polly = new Parrot ('Polly');
+const Hortonas = new Elephant ('Horton');
+const Apu = new Monkey ('Apu');
+
+
 console.log(bloodwing.hi());
 console.log(lydeka.hi());
 console.log(lydeka.grantWish('lots of cash'));
@@ -76,3 +82,11 @@ console.log(antanas.hi());
 console.log(bloodwing.position());
 console.log(dusliarka.position());
 console.log(polly.speak('Ką žiūri gaidy?'));
+console.log(Apu.hi());
+console.log(Hortonas.speak());
+console.log(Apu.speak());
+console.log(Apu.count(1,2));
+console.log(Apu.count(4,2));
+console.log(Hortonas.spray('Sunny'));
+console.log(Hortonas.spray('Cloudy'));
+console.log(Hortonas.spray('IDK'));
